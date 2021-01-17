@@ -1,0 +1,33 @@
+<%- include("partials/header.ejs")%>
+<div class = "loadingSubmit">
+    <img src = "assests/infinityloader.gif"  alt = "img" />
+    <p>Creating Your Identity.....</p>
+</div>
+<div class = "container">
+    <form class="form-signin" method="post" , action="/signup" onsubmit="submitLoading()">
+       
+        <h2 class="form-signin-heading">Sign Up</h2>
+        <label for="inputText" class="sr-only">UserNaMe</label>
+        <input type="text" id="inputText" name="username" class="form-control" placeholder="User Name" required autofocus autocomplete="off">
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" id="inputEmail" name="email" class="form-control" placeholder="Email address" required autofocus autocomplete="off">
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required autocomplete="off">
+        <div class="checkbox">
+            <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    </form>
+
+    </div>
+    <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src = "scripts/signuploader.js" defer></script>
+    </body>
+
+    </html>
